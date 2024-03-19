@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20210929/pngtree-glassmorphism-wave-effect-abstract-background-image_908575.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* text-align: center; */
+}
+
+.clock-container {
+  width: 90%;
+  max-width: 450px;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(4px);
+  border-radius: 10px;
+  padding: 10px 20px;
+  text-align: center;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3),
+    -2px -4px 0px rgba(255, 255, 255, 0.3);
+}
+
+.clock-container .heading {
+  text-transform: uppercase;
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 5px lavender;
+}
+
+.clock {
+  margin: 20px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+#hours,
+#minutes,
+#seconds {
+  align-self: center;
+  font-size: 4rem;
+  color: white;
+}
+.box {
+  width: 120px;
+  height: 100px;
+  background: rgba(230, 23, 137, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3),
+    -10px -8px 10px rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+}
+
+.text {
+  height: 50px;
+  width: 100%;
+  background: rgb(228, 11, 58, 0.3);
+  font-size: 1.2rem;
+  color: white;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.clock #am-pm {
+  align-self: last baseline;
+  width: 80px;
+  height: 40px;
+  background: rgba(255, 69, 0, 0.5);
+  color: white;
+  text-align: center;
+  line-height: 40px;
+  font-size: larger;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3),
+    -10px -8px 10px rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  font-weight: 700;
+}
